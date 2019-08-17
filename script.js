@@ -1,19 +1,9 @@
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-
-
 function openGitHubAsnPlanner(event) {
   window.open('https://github.com/jkrovitz/assignmentPlanner', '_blank');
 }
 
 function openCapstoneDescription(event) {
-  window.open('mac-capstone.html');
+  window.open('mac-capstone.php', '_self');
 }
 
 function openGitHubHotelMessenger(event) {
@@ -31,5 +21,3 @@ function openCrystalDemo(event) {
 function openAllMapsPDF(event) {
   window.open('maps-i-made.pdf', '_blank');
 }
-
-$('#githubAsnPlannerGitHubLink').on('touchstart click', function(){ window.open('https://github.com/jkrovitz/assignmentPlanner', '_blank') });

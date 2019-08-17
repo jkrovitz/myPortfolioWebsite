@@ -2,37 +2,19 @@
 <html>
 <head>
   <title>Jeremy Krovitz Home Page</title>
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport">
-  <meta charset="UTF-8">
 
   <!-- SEO Links -->
   <meta content="jeremykrovitz.com" property="og:title">
   <meta content="Jeremy Krovitz profile describing software projects he has completed and relavant experiences that he has had." property="og:description">
   <meta content="//www.jeremykrovitz.com" property="og:url">
-    <meta content="//jeremykrovitz.com/img/linkedin_seo_img.jpg" property="og:image">
+  <meta content="//jeremykrovitz.com/img/linkedin_seo_img.jpg" property="og:image">
   <meta content="Jeremy Krovitz, About Me, About Jeremy Krovitz, My Projects, Crystal Visualization, Pixel Sorting, Programming Tutorials" name="keywords">
   <meta content="Jeremy Krovitz Home Page" property="og:title">
   <!-- <meta content="https://jeremykrovitz.com/images/fbShareLinkImg.png" property="og:image"> -->
   <meta content="https://jeremykrovitz.com/" property="og:url">
-
-  <!-- Favicons -->
-  <link href="favicons/apple_icon_57x57.png" rel="apple-touch-icon" sizes="57x57">
-  <link href="favicons/apple_icon_60x60.png" rel="apple-touch-icon" sizes="60x60">
-  <link href="favicons/apple_icon_72x72.png" rel="apple-touch-icon" sizes="72x72">
-  <link href="favicons/apple_icon_76x76.png" rel="apple-touch-icon" sizes="76x76">
-  <link href="favicons/apple_icon_114x114.png" rel="apple-touch-icon" sizes="114x114">
-  <link href="favicons/apple_icon_120x120.png" rel="apple-touch-icon" sizes="120x120">
-  <link href="favicons/apple_icon_144x144.png" rel="apple-touch-icon" sizes="144x144">
-  <link href="favicons/apple_icon_152x152.png" rel="apple-touch-icon" sizes="152x152">
-  <link href="favicons/apple_icon_180x180.png" rel="apple-touch-icon" sizes="180x180">
-  <link href="favicons/android_icon_192x192.png" rel="icon" sizes="192x192" type="image/png">
-  <link href="favicons/favicon_32x32.png" rel="icon" sizes="32x32" type="image/png">
-  <link href="favicons/favicon_96x96.png" rel="icon" sizes="96x96" type="image/png">
-  <link href="favicons/favicon_16x16.png" rel="icon" sizes="16x16" type="image/png">
-  <link href="favicons/manifest.json" rel="manifest">
-  <meta content="#ffffff" name="msapplication-TileColor">
-  <meta content="favicons/ms-icon-144x144.png" name="msapplication-TileImage">
-  <meta content="#ffffff" name="theme-color">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta charset="UTF-8">
+  <?php include 'favicons.php';?>
 
   <!-- HOSTED -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800' rel='stylesheet' type='text/css'>
@@ -69,7 +51,6 @@
   <!--local -->
   <link href="style/style.css" rel="stylesheet">
   <link href="style/matt_style.css" rel="stylesheet">
-
   <style>
 
 
@@ -115,6 +96,7 @@
   </style>
 </head>
 <body   data-spy="scroll" data-target=".navbar" >
+
   <div class="overflow-wrap">
     <section class="flex height-fix" id="home">
       <div class="canvas" id="pt"></div>
@@ -134,7 +116,7 @@
         </section>
 
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-          <a class="navbar-brand" href="index.html">Jeremy Krovitz</a>
+          <a class="navbar-brand" href="#">Jeremy Krovitz</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -334,25 +316,7 @@
               </form>
             </div>
           </section>
-          <footer>
-            <div class="icon-wrap flex row">
-              <a aria-label="LinkedIn" href="https://www.linkedin.com/in/jkrovitz" target="_blank">
-                <div class="flex icon" id="icon-2">
-                  <i class="mdi mdi-linkedin" aria-hidden="true"></i>
-                </div>
-              </a>
-              <a aria-label="GitHub" href="https://www.github.com/jkrovitz" target="_blank">
-                <div class="flex icon" id="icon-3">
-                  <i class="mdi mdi-github-circle" aria-hidden="true"></i>
-                </div>
-              </a>
-                </div>
-
-                  <div class="footer-copyright py-3">
-                    Jeremy Krovitz © 2019
-                  </div>
-
-              </footer>
+          <?php include 'footer.php';?>
 
           </div>
             <script src="scripts/canvas.js">
