@@ -73,7 +73,7 @@
   <link href="style/matt_style.css" rel="stylesheet">
 
   <style>
-
+/*
   .topnav {
     overflow: hidden;
     background-color: #333;
@@ -96,10 +96,10 @@
 
   .topnav a.active {
     /* background-color: #4CAF50; */
-    color: white;
-  }
+    /* color: white;
+  } */
 
-  .topnav .icon {
+  /* .topnav .icon {
     display: none;
   }
 
@@ -123,7 +123,7 @@
       display: block;
       text-align: left;
     }
-  }
+  } */
 
   .vid-btn{
     display: block;
@@ -207,21 +207,21 @@ input[type=submit]:active {
 
  div.boxAroundText{
   background-color: rgba(255, 255, 255, 0);
-  width: 90% !important;
-  margin-top: -500px !important;
+  /* width: 90% !important; */
+  margin-top: -400px !important;
   z-index: 2 !important;
-  height: 100%;
+  /* height: 100%; */
 
 }
 
 .text{
   background-color: #01426a;
-  color: white; 
+  color: white;
   width: 100%;
-  margin-top: 100px !important;
-  padding: 20px !important;
-  margin-bottom: 70px !important;
-
+  margin-top: -60px !important;
+  /* padding: 20px !important; */
+  /* margin-bottom: 70px !important; */
+  border: 2px white solid;
 }
 
 .highlight{
@@ -229,9 +229,12 @@ input[type=submit]:active {
 }
 
 .canvas{
-  height: 25%;
+  height: 300px;
 }
 
+.navbar{
+  top: 80px;
+}
 
 
 
@@ -244,9 +247,9 @@ input[type=submit]:active {
 
 
 
-  <div class="overflow-wrap">
 
-    <section class="flex height-fix" id="home">
+
+
       <div class="canvas" id="pt"></div>
       <div class="flex">
   <div class="boxAroundText">
@@ -257,8 +260,83 @@ input[type=submit]:active {
 
 
           </div>
-        </section>
+
+        <nav class="navbar navbar-expand-md navbar-dark ">
+          <a class="navbar-brand" href="index.html">Jeremy Krovitz</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item pt-3">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#software-projects">Software Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#gis-projects">GIS Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+        </nav>
+
+
+        <nav aria-label="breadcrumb" id="breadcrumb-id">
+          <ol class="breadcrumb arr-right">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active-b-i">Capstone Presentation</li>
+          </ol>
+        </nav>
+        <div>
+          <div class="top-capstone-card card">
+            <div class="padding-around-card-content">
+            <h2 class="pt-2">Capstone Presentation</h2>
+            <h4>March 29, 2019</h4>
+            <div class="card-img"><img alt="Card image cap" class="card-img-top rounded img-fluid pl-4 pr-4 pt-3 pb-2" src="img/capstone-pres-pic.PNG"></div>
+            <div class="card-body">
+              <p class="card-text">I did my capstone presentation on the assignment / task planner software that I developed in a group for my Internet Computing class. I worked more on the project after the class was over and was able to implement a JavaScript library for time successfully within an hour that my group was struggling with for two weeks. I was thus able to give a capstone presentation where the timeline lines, no matter whether it was a short or long term event worked correctly for each event. There had been bugs when initially presented at the end of the semester in Internet Computing.</p>
+
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="quote">
+          <div class=" container">
+            <div class="bottom-capstone-card card">
+              <h3 class="pt-3 pb-3">Capstone Presentation Video (2 Parts)</h3>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe src="https://www.youtube.com/embed/videoseries?list=PLDamcZx0Y6HLmosxcQxZiTA22VQX-zMLJ"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body"></div>
+            </div>
+          </div>
       </div>
+
+      <!-- Footer -->
+        <footer class="page-footer font-small footer-background">
+          <div class="footer-copyright text-center py-3">
+            Jeremy Krovitz © 2019
+          </div>
+        </footer><!-- Footer -->
+
           </body>
           <script src="scripts/canvas2.js">
           </script>
